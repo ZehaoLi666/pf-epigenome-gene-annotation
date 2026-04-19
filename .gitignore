@@ -1,0 +1,64 @@
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.Rhistory
+.RData
+.Rproj.user/
+.ipynb_checkpoints/
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Cluster and runtime logs
+logs/
+*.log
+*.out
+*.err
+slurm-*.out
+
+# Large sequencing and signal files
+*.bam
+*.bai
+*.bw
+*.bigWig
+*.bigwig
+*.bedgraph
+*.gz
+*.fa.fai
+*.fasta.fai
+
+# Model artifacts
+*.joblib
+*.pkl
+*.pickle
+
+# Generated model and cache directories
+window1000_bin100/model_training/cache_rf/
+window1000_bin100/model_training/*_out/
+window1000_bin100/model_training_end/rf_groupcv_out/
+
+# Generated feature matrices and prediction outputs
+window1000_bin100/prediction/intergenic_bins/
+window1000_bin100/prediction/merged_intergenic_features.csv
+window1000_bin100/prediction/results_intergenic_TSS/*.csv
+window1000_bin100/prediction/results_intergenic_TSS/*.tsv
+window1000_bin100/prediction/results_intergenic_TSS/*.bed
+window1000_bin100/prediction/results_intergenic_TSS/*.bedgraph
+window1000_bin100/prediction/results_intergenic_TTS/
+window1000_bin100/training_features_values/positive_values/*_features_*.csv
+window1000_bin100/training_features_values/positive_values/merged_*.csv
+window1000_bin100/training_features_values/negative_values/*.csv
+window1000_bin100/feature_selection/*.csv
+window500_bin50/generate_features/positive_values/*_features_*.csv
+window500_bin50/generate_features/positive_values/merged_*.csv
+window500_bin50/generate_features/negative_values/*.csv
+
+# Local configuration overrides
+window1000_bin100/training_features_values/*.local.json

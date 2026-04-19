@@ -1,0 +1,40 @@
+python generate_banded_negatives.py \
+  --positives /path/positives.tsv \
+  --sep "\s+" --no-header --col-order "chr,tss,tts,gene,strand" \
+  --chrom-sizes /path/Pf3D7.chrom.sizes \
+  --quiet-bed /path/quiet_intergenic.bed \
+  --exclude-bed /path/telomere_fixed.bed \
+  --window 1000 --keepout 150 \
+  --near-bands "200-600,600-1500" --per-band-per-side 1 \
+  --far-step 200 \
+  --out-neg  /path/negatives_all.tsv \
+  --out-meta /path/negatives_meta.tsv
+
+
+python generate_banded_negatives.py  --positives reference_gene_boundaries.csv --sep "\s+" --no-header --col-order "chr,tss,tts,gene,strand" --chrom-sizes Pf3D7.chrom.sizes --quiet-bed quiet_intergenic.bed --exclude-bed telomere_fixed.bed --window 1000 --keepout 150   --near-bands "200-600,600-1500" --per-band-per-side 1 --far-step 200 --out-neg  negatives_all.tsv --out-meta negatives_meta.tsv
+
+
+python generate_banded_negatives_v2.py \
+  --positives reference_gene_boundaries.csv \
+  --sep ',' --no-header --col-order 'chr,tss,tts,gene,strand' \
+  --chrom-sizes Pf3D7.chrom.sizes \
+  --quiet-bed quiet_intergenic.bed \
+  --exclude-bed telomere_fixed.bed \
+  --window 1000 --keepout 150 \
+  --near-bands 200-600,600-1500 --per-band-per-side 1 \
+  --far-step 200 \
+  --target-neg 2000 --near-fraction 0.5 \
+  --out-neg negatives_2k.tsv \
+  --out-meta negatives_2k_meta.tsv
+echo "exit code: $?"
+ls -lh negatives_2k.tsv negatives_2k_meta.tsv
+
+
+python generate_banded_negatives_v2.py \
+  --positives reference_gene_boundaries.csv \
+  --sep ',' --no-header --col-order 'chr,tss,tts,gene,strand' \
+  --chrom-sizes Pf3D7.chrom.sizes \
+  --window 1000 --keepout 150 \
+  --near-bands 200-600,600-1500 --per-band-per-side 1 \
+  --target-neg 2000 --near-fraction 1.0 \
+  --out-neg neg_test.tsv --out-meta neg_test_meta.tsv

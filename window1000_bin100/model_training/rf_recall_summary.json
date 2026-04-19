@@ -1,0 +1,96 @@
+{
+  "holdout": {
+    "accuracy": 0.8488964346349746,
+    "precision": 0.8289473684210527,
+    "recall": 0.8719723183391004,
+    "roc_auc": 0.9189417531718569
+  },
+  "best_params": {
+    "n_estimators": 400,
+    "max_depth": 12,
+    "min_samples_leaf": 1,
+    "max_features": "sqrt"
+  },
+  "grid_top": [
+    {
+      "n_estimators": 400,
+      "max_depth": 12.0,
+      "min_samples_leaf": 1,
+      "max_features": "sqrt",
+      "mean_recall": 0.8695328737112984,
+      "std_recall": 0.011830216727292574
+    },
+    {
+      "n_estimators": 300,
+      "max_depth": 12.0,
+      "min_samples_leaf": 1,
+      "max_features": "sqrt",
+      "mean_recall": 0.8680462532950447,
+      "std_recall": 0.010480235327217374
+    },
+    {
+      "n_estimators": 400,
+      "max_depth": 12.0,
+      "min_samples_leaf": 2,
+      "max_features": "sqrt",
+      "mean_recall": 0.8676103725143285,
+      "std_recall": 0.009045544491548091
+    },
+    {
+      "n_estimators": 300,
+      "max_depth": 12.0,
+      "min_samples_leaf": 2,
+      "max_features": "sqrt",
+      "mean_recall": 0.8675606563826325,
+      "std_recall": 0.009981809502842734
+    },
+    {
+      "n_estimators": 400,
+      "max_depth": NaN,
+      "min_samples_leaf": 2,
+      "max_features": "sqrt",
+      "mean_recall": 0.8660239955990416,
+      "std_recall": 0.011669036120602166
+    },
+    {
+      "n_estimators": 300,
+      "max_depth": NaN,
+      "min_samples_leaf": 2,
+      "max_features": "sqrt",
+      "mean_recall": 0.8653299151691483,
+      "std_recall": 0.01301475568395772
+    },
+    {
+      "n_estimators": 400,
+      "max_depth": 12.0,
+      "min_samples_leaf": 2,
+      "max_features": "log2",
+      "mean_recall": 0.8652606368204158,
+      "std_recall": 0.012328484695283437
+    },
+    {
+      "n_estimators": 300,
+      "max_depth": 12.0,
+      "min_samples_leaf": 2,
+      "max_features": "log2",
+      "mean_recall": 0.8648642047094146,
+      "std_recall": 0.011863675862796212
+    },
+    {
+      "n_estimators": 300,
+      "max_depth": NaN,
+      "min_samples_leaf": 2,
+      "max_features": "log2",
+      "mean_recall": 0.8648244318040579,
+      "std_recall": 0.013052608869752723
+    },
+    {
+      "n_estimators": 400,
+      "max_depth": NaN,
+      "min_samples_leaf": 2,
+      "max_features": "log2",
+      "mean_recall": 0.8646262157485575,
+      "std_recall": 0.012570541621652696
+    }
+  ]
+}

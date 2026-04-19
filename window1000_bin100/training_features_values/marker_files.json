@@ -1,0 +1,19 @@
+{
+  "ATAC": "${LNC_CHIP_MARKER_DIR}/ATAC-seq.txt",
+  "H3R17me2": "${LNC_CHIP_MARKER_DIR}/H3R17me2.txt",
+  "H2A.Zac": "${LNC_CHIP_MARKER_DIR}/H2A.Zac.txt",
+  "H3K4me3": "${LNC_CHIP_MARKER_DIR}/H3K4me3.txt",
+  "H3K4me2": "${LNC_CHIP_MARKER_DIR}/H3K4me2.txt",
+  "H3K4me": "${LNC_CHIP_MARKER_DIR}/H3K4me.txt",
+  "H3K18me": "${LNC_CHIP_MARKER_DIR}/H3K18me.txt",
+  "H3K27me": "${LNC_CHIP_MARKER_DIR}/H3K27me.txt",
+  "H3K27ac": "${LNC_CHIP_MARKER_DIR}/H3K27ac.txt",
+  "H3K18ac": "${LNC_CHIP_MARKER_DIR}/H3K18ac.txt",
+  "H3": "${LNC_CHIP_MARKER_DIR}/H3.txt",
+  "H3K4me1": "${LNC_CHIP_MARKER_DIR}/H3K4me1.txt",
+  "H2A.Z": "${LNC_CHIP_MARKER_DIR}/H2A.Z.txt",
+  "H2B.Z": "${LNC_CHIP_MARKER_DIR}/H2B.Z.txt",
+  "MNase": "${LNC_CHIP_MARKER_DIR}/MNseq_sub.txt",
+  "H3K9ac": "${LNC_CHIP_MARKER_DIR}/H3K9ac.sub.txt",
+  "H3K36me3": "${LNC_CHIP_MARKER_DIR}/H3K36me3.Nor.txt"
+}
