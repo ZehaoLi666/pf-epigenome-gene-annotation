@@ -46,14 +46,6 @@ Core Python packages used by the supported workflow include:
 - `statsmodels`
 - `tqdm`
 
-### R
-
-The supported R script is `validation_plot/violin_plot.R`, which uses:
-
-- `readr`
-- `dplyr`
-- `ggplot2`
-- `scales`
 
 ### Command-Line Tools
 
