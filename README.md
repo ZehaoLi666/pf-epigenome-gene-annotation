@@ -2,13 +2,6 @@
 
 This repository contains the published epigenomic boundary-prediction workflow used to identify candidate transcript starts and ends in *Plasmodium falciparum*. The supported public workflow is the `window1000_bin100` pipeline, which builds binned chromatin features around annotated gene boundaries, trains classifiers, scores intergenic sites, and exports candidate loci for downstream validation.
 
-The repository was cleaned for publication by:
-
-- adding an MIT license,
-- removing notebook outputs,
-- replacing hard-coded active workflow paths with portable configuration,
-- moving non-essential historical scripts into `archive/`, and
-- documenting the minimal supported file set needed to rerun the method.
 
 ## What Is Supported
 
