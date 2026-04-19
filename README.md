@@ -235,43 +235,7 @@ Expected outputs include:
 - `prediction/novel_units.tsv`
 - `prediction/novel_units.bed`
 
-### 6. Optional Validation Plot
 
-Use the refactored R script to compare predicted and annotated UTR lengths:
-
-```bash
-Rscript validation_plot/violin_plot.R \
-  --pred5-bed validation_plot/predicted_UTR5_with_v68_replacements.bed \
-  --pred3-bed validation_plot/predicted_UTR3_from_CDS.bed \
-  --v68-5-bed validation_plot/v68_gene_UTR5_longest.bed \
-  --v68-3-bed validation_plot/v68_gene_UTR3_longest.bed \
-  --out validation_plot/UTR_length_violin_predicted_vs_v68.png
-```
-
-## Minimal File Set For Another Researcher
-
-If you only want the files needed for the main published workflow, you can ignore everything except:
-
-- `requirements-python.txt`
-- `window1000_bin100/training_features_values/`
-  Files used directly by the supported method:
-  `assign_value.sh`, `assign_value_Neg.sh`, `build_epigenetic_features_bins.py`, `build_epigenetic_features_bins_Neg.py`, `merge_feature_chunks.py`, `negative_values/split.py`, `marker_files.json`, `marker_files_ATAC.json`, `reference_gene_boundaries.csv`, `negatives_2k.tsv`
-  Optional regeneration helpers:
-  `make_quiet_intergenic_from_beds.py`, `generate_banded_negatives_v2.py`, `Pf3D7.chrom.sizes`, `telomere_fixed.bed`, `Merged.bed`
-- `window1000_bin100/model_training/`
-  `model.training.py`, `model.training.sh`
-- `window1000_bin100/prediction/`
-  `assign_value.sh`, `run_bins_per_marker.sh`, `build_bins_for_intergenic_midpoints.py`, `merge_intergenic_bins.py`, `intergenic_midpoints_100bp.csv`
-- `window1000_bin100/prediction/results_intergenic_TSS/`
-  `filter_TSS.py`, `filter_TSS.sh`, `PlasmoDB-48_Pfalciparum3D7_Genes.bed`
-- `validation_plot/violin_plot.R`
-
-Everything else is either:
-
-- derived output,
-- exploratory analysis,
-- figure-generation code, or
-- historical code preserved in `archive/`
 
 ## Notes For Reuse
 
