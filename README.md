@@ -1,6 +1,6 @@
 # Chromatin-informed transcript boundaries in *Plasmodium falciparum*
 
-Code for **Li Z** — a long-read–anchored, chromatin-informed model of transcription start
+Code by **Zehao Li** — a long-read–anchored, chromatin-informed model of transcription start
 (TSS) and end (TTS) sites across the *P. falciparum* 3D7 genome, and the refined UTR annotation and biology derived
 from it.
 
