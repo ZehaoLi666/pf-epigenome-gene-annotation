@@ -1,13 +1,10 @@
 # Chromatin-informed transcript boundaries in *Plasmodium falciparum*
 
-Code for **Li Z, Lonardi S, Le Roch KG** — a long-read–anchored, chromatin-informed model of transcription start
+Code for **Li Z** — a long-read–anchored, chromatin-informed model of transcription start
 (TSS) and end (TTS) sites across the *P. falciparum* 3D7 genome, and the refined UTR annotation and biology derived
-from it (Cell Genomics submission, October 2026).
+from it.
 
-> **Earlier version.** The code of the previous (Genome Research) submission — the `window1000_bin100`
-> random-forest workflow — is preserved unchanged at the git tag
-> [`genome-research-v1`](../../tree/genome-research-v1). That workflow is not used by the current paper and has
-> been removed from the default branch.
+
 
 ## Pipeline overview
 
