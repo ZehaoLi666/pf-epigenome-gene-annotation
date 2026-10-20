@@ -1,0 +1,19 @@
+# Copy to config/paths.yaml and edit. Read by pfconfig.py (KEY: value, one per line; ~ and $VARS are expanded).
+# Any key can be overridden with an environment variable PF_<KEY>.
+
+# Local data root: PlasmoDB releases, bigWig tracks, long-read model BEDs (layout: README, "Input data layout")
+LAB_DIR: /path/to/Lab
+
+# Intermediate result tables deposited with the paper (gene_boundaries_v3_all_genes.tsv, models_v3.tsv.gz, ...)
+RESULTS_DIR: /path/to/pf_boundaries_results
+
+# Cluster locations used by the HPCC scripts (also set in config/hpcc.env for shell jobs)
+HPCC_BIGDATA: /path/on/cluster/bigdata
+HPCC_LAB: /path/on/cluster/lab
+HPCC_HOME: /path/on/cluster/home
+
+# Figure source tables (Figure1..Figure5/data) and supplementary-table output folder
+FIGURES_DIR:              # default: <repo>/figures
+TABLES_OUT_DIR:           # default: <repo>/supplementary/tables/out
+SUBMISSION_DIR:           # only used in descriptive strings
+WORK_DIR:                 # default: current directory

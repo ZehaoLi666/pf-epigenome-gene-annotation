@@ -1,0 +1,13 @@
+A_full	chrom,onehot,glm,gro,poly,strand,daft	T8
+L_nochrom	onehot,glm,gro,poly,strand,daft	-
+L_noonehot	chrom,glm,gro,poly,strand,daft	T8
+L_noglm	chrom,onehot,gro,poly,strand,daft	T8
+L_nogro	chrom,onehot,glm,poly,strand,daft	T8
+L_nopoly	chrom,onehot,glm,gro,strand,daft	T8
+L_nodaft	chrom,onehot,glm,gro,poly,strand	T8
+L_nostrand	chrom,onehot,glm,gro,poly,daft	T8
+S_chrom	chrom	T8
+S_dna	onehot,glm	-
+S_rna	gro,poly,strand,daft	-
+S_chromdna	chrom,onehot,glm	T8
+N_noshortread	chrom,onehot,glm,gro,poly	T8

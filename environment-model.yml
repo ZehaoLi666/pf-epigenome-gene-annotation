@@ -1,0 +1,15 @@
+# Model training / prediction (local runs; HPCC runs used an equivalent PyTorch environment)
+name: pf-boundaries-model
+channels: [pytorch, conda-forge, bioconda]
+dependencies:
+  - python=3.12
+  - numpy=2.5
+  - pandas=3.0
+  - scipy=1.18
+  - pytorch=2.13
+  - scikit-learn=1.9
+  - lightgbm=4.7
+  - pybigwig=0.3.26
+  - pip
+  - pip:
+      - transformers   # gLM (Caduceus) embeddings, model/features/glm_embed.py (GPU)
