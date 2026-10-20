@@ -1,0 +1,2 @@
+from pfconfig import result  # paths: config/paths.yaml
+P = {'tsc': result('transcript_stage_confirmation.tsv.gz'), 'hce': result('hc_model_evidence.tsv.gz'), 'etc': result('end_transcription_contexts.tsv.gz'), 'gsc': result('gene_stage_confirmation.tsv'), 'ltc': result('loci_transcript_classes.tsv'), 'tpm': result('stage_TPM_9stages.tsv'), 'alt': result('confirmed_alternative_TSSs.tsv'), 'sw': result('confirmed_genes_stage_TSS_switches.tsv'), 'bed': result('hc_reference.bed.gz'), 'tc': result('tss_clusters.tsv.gz'), 'het': result('gene_heterochromatin_groups.tsv')}

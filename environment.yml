@@ -1,0 +1,14 @@
+# Analysis, figures and supplementary tables (versions used for the Oct 2026 release)
+name: pf-boundaries
+channels: [conda-forge, bioconda]
+dependencies:
+  - python=3.12
+  - numpy=2.5
+  - pandas=3.0
+  - scipy=1.18
+  - matplotlib=3.11
+  - statsmodels=0.15
+  - pybigwig=0.3.26
+  - openpyxl=3.1
+  - pysam          # long-read / short-read scripts
+  - pip
